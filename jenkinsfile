@@ -2,9 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('poi panichusko ra') {
             steps {
-                echo 'Hello World'
+                echo 'antha kaliga vunnav ntra'
+            }
+        }
+        stage('nduku panikivastav bro'){
+            steps{
+                echo 'waste of time ra naku'
+            }
+        }
+        stage('beeeeeeeeep'){
+            steps{
+                echo 'beep lo kuda thittalenu ra ninnu'
             }
         }
     }
