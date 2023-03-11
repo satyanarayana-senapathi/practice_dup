@@ -1,0 +1,20 @@
+pipeline {
+  agent any
+  stages {
+    stage('List Files') {
+      steps {
+        sh 'ls *.txt'
+      }
+    }
+    stage('Read Files') {
+      steps {
+        sh 'for file in *.txt; do cat $file; done'
+      }
+    }
+    stage('Count Lines') {
+      steps {
+        sh 'wc -l *.txt'
+      }
+    }
+  }
+}
